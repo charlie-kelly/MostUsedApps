@@ -1,17 +1,37 @@
+# Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Update Homebrew
+brew update
+
+# Install Cask
+brew install cask
+
+# Show welcome notification
 osascript -e 'display notification "Beginning app installation." with title "Welcome to MostUsedApps v0.1"'
-wait
-brew install --cask slack
-wait
-brew install --cask spotify
-wait
-brew install --cask discord
-wait
-brew install --cask sublime-text
-wait
-brew install --cask meetingbar
-wait
-brew install wireshark
-wait
-brew install nmap
-wait
+
+# Update Casks
+brew tap caskroom/cask
+
+# Install apps
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" flux
+brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" discord
+brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" meetingbar
+brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" transmission
+brew cask install --appdir="/Applications" wireshark
+brew cask install --appdir="/Applications" nmap
+brew cask install --appdir="/Applications" tor
+brew cask install --appdir="/Applications" plex-media-server
+
+# Install Command Line tools
+brew install speedtest-cli
+brew install htop
+brew install tree
+
+# Show complete notification
+osascript -e 'display notification "Your apps are installed!" with title "Installation complete"'
