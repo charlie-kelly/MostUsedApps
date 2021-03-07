@@ -27,6 +27,7 @@ brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" nmap
 brew cask install --appdir="/Applications" tor
 brew cask install --appdir="/Applications" plex-media-server
+brew cask install --appdir="/Applications" bitwarden
 
 # Install Command Line tools
 brew install speedtest-cli
