@@ -8,7 +8,7 @@ brew update
 brew install cask
 
 # Show welcome notification
-osascript -e 'display notification "Beginning app installation." with title "Welcome to MostUsedApps v0.1"'
+osascript -e 'display notification "Beginning app installation." with title "MostUsedApps"'
 
 # Update Casks
 brew tap caskroom/cask
@@ -33,6 +33,7 @@ brew cask install --appdir="/Applications" bitwarden
 brew install speedtest-cli
 brew install htop
 brew install tree
+brew install npm
 
 # Show complete notification
-osascript -e 'display notification "Your apps are installed!" with title "Installation complete"'
+osascript -e 'display notification "Your apps are installed!" with title "MostUsedApps"'
